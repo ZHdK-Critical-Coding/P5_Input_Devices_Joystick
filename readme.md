@@ -8,8 +8,13 @@ point for using game controllers or other HID devices as input for a sketch.
 
 ## Installation
 
-Requirements: a USB joystick (HID device) and Chrome or Edge (WebHID is not
-available in Firefox or Safari).
+Requirements: a USB joystick (HID device), Visual Studio Code with the Live
+Server extension, and Chrome or Edge (WebHID is not available in Firefox or
+Safari).
+
+Libraries (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (included, not used).
+
+## How to Run
 
 1. Connect the joystick.
 2. Open the folder in Visual Studio Code and start Live Server (click
@@ -19,8 +24,6 @@ available in Firefox or Safari).
 The sketch uses `navigator.hid.getDevices()`, which only returns devices the
 page has already been granted access to — it does not open a device picker.
 To show the picker, use `navigator.hid.requestDevice()` instead.
-
-Libraries (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (included, not used).
 
 ## Coding Help
 
